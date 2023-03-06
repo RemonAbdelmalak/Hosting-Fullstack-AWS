@@ -7,10 +7,6 @@ orbs:
   # different jobs are calles later in the workflows sections
 jobs:
   build:
-    filters:
-      branches:
-        only:
-          - main
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
