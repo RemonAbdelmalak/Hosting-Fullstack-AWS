@@ -50,4 +50,4 @@ jobs:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: |
-            npm run deploy
+            npm run frontend:deploy
