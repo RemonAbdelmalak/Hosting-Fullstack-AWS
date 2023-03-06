@@ -7,6 +7,10 @@ orbs:
   # different jobs are calles later in the workflows sections
 jobs:
   build:
+    filters:
+      branches:
+        only:
+          - main
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
@@ -51,17 +55,3 @@ jobs:
           # TODO: Install, build, deploy in both apps
           command: |
             npm run frontend:deploy
-workflows:
-  jobs:
-    - build
-    - hold:
-        filters:
-          branches:
-            only:
-              - main
-        type: approval
-        requires:
-          - build
-    - deploy:
-        requires:
-          - hold
