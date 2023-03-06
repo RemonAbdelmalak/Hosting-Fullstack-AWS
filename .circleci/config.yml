@@ -51,3 +51,11 @@ jobs:
           # TODO: Install, build, deploy in both apps
           command: |
             npm run frontend:deploy
+workflows:
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - main
