@@ -52,9 +52,9 @@ jobs:
           command: |
             npm run frontend:deploy
 workflows:
-  udagram:
-    jobs:
-      filters:
-        branches:
-          only:
-            - main
+  jobs:
+    - hold:
+        filters:
+          branches:
+            only:
+              - main
