@@ -1,6 +1,6 @@
 # Hosting a Full-Stack Application
 
----
+
 
 The project will also include writing documentation and runbooks covering the operations of the deployment process. Those runbooks will serve as a way to communicate with future developers and anybody involved in diagnosing outages of the Full-Stack application.
 
