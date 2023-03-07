@@ -1,13 +1,8 @@
 # Hosting a Full-Stack Application
 
-
-
-The project will also include writing documentation and runbooks covering the operations of the deployment process. Those runbooks will serve as a way to communicate with future developers and anybody involved in diagnosing outages of the Full-Stack application.
-
 ## Udagram
 
-This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
-
+This application is provided from Udacity to be hosted into AWS with Pipeline using CircleCI. The Project is for the Advanced Full-Stack Web Development Nanodegree Program - Deploying & Hosting a Full-Stack Application.
 
 
 ### Dependencies
