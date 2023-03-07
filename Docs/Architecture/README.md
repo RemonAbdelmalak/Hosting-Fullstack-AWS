@@ -1,7 +1,5 @@
 # Udagram
 
----
-
 ## Description
 
 ### Dependencies
@@ -18,18 +16,14 @@
 - A S3 bucket for hosting uploaded pictures.
 
 ```
+### Installation
 
-### AWS Cloud Setup
+1. Go to AWS and make sure that the RDS is setup and take the endpoint.
+1. After that, go and create a S3 Bucket for your FrontEnd.
+1. Now go and navigate to `cd starter/udagram-api` and type `npm install`.
+1. Then, navigate to the `cd starter/udagram-frontend` and aslo type `npm install`.
 
-- RDS - Database Host: database-1.co5afygpb7yx.us-east-1.rds.amazonaws.com
-- RDS - Database Port: 5432
-- RDS - Database Name: postgres
-
-- S3 Endpoint - Frontend: http://projectbucket241769392460.s3-website-us-east-1.amazonaws.com
-
-- Elastic Beanstalk URL - Backend: http://udagram-api.eba-pmf3eyj7.us-east-1.elasticbeanstalk.com/
-
-## Environment Variables
+<!-- ## Environment Variables
 
 Setup the following variables in the .env file or in the cloud environments:
 ```
@@ -45,33 +39,7 @@ Setup the following variables in the .env file or in the cloud environments:
 - AWS_ACCESS_KEY_ID = "AKIATQSUUFFGBDZTWLOJ"
 - AWS_SECRET_ACCESS_KEY = "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"
 
-```
-
-## Pipeline
-
-From the root of the project:
-- `npm run frontend:install`    - To install frontend dependencies.
-- `npm run frontend:build`      - To build the Angular/Frontend.
-- `npm run backend:install`     - To install backend dependencies.
-- `npm run backend:build`       - To transpile the Typescript/Backend.
-- `npm run backend:deploy`      - To deploy the project to EB 
-## CircleCi
-
-The order of the run jobs:
-
-- Spin up enviroment.
-- Preparing enviroment variables.
-- Install NodeJS 14.15.
-- Setting Up Elastic Beanstalk CLI.
-- Install AWS CLI.
-- Configure AWS AccessKeyID.
-- Checkout Code.
-- Frontend Install dependencies.
-- Frontend Build the angular.
-- Backend Install dependencies
-- Backend Build.
-- Deploy App.
-
+``` -->
 ## Testing
 
 This project contains two different test suite: unit tests and End-To-End tests(e2e). Follow these steps to run the tests.
